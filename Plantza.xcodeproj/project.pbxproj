@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,26 @@
 		8A2A30FF26F480F500807993 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2A30FE26F480F500807993 /* ContentView.swift */; };
 		8A2A310126F480F700807993 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2A310026F480F700807993 /* Assets.xcassets */; };
 		8A2A310426F480F700807993 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2A310326F480F700807993 /* Preview Assets.xcassets */; };
+		8A2A310D26F4BE5C00807993 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2A310C26F4BE5C00807993 /* HomeView.swift */; };
+		8A2A310F26F4BE8700807993 /* BlogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2A310E26F4BE8700807993 /* BlogView.swift */; };
+		8A2A311126F4BEAD00807993 /* ShoppingBagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2A311026F4BEAD00807993 /* ShoppingBagView.swift */; };
+		8A2A311326F4BECC00807993 /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2A311226F4BECC00807993 /* MoreView.swift */; };
+		8A2A311626F4D7A200807993 /* SmallButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2A311526F4D7A200807993 /* SmallButton.swift */; };
+		8A2A311826F4DA8C00807993 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2A311726F4DA8C00807993 /* MenuCell.swift */; };
+		8A2A311B26F4EB1600807993 /* OrderHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2A311A26F4EB1600807993 /* OrderHistoryView.swift */; };
+		8A2A311D26F4EB3600807993 /* FAQView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2A311C26F4EB3600807993 /* FAQView.swift */; };
+		8A2A311F26F4EB4E00807993 /* TermsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2A311E26F4EB4E00807993 /* TermsView.swift */; };
+		8A2A312126F4EB6600807993 /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2A312026F4EB6600807993 /* PrivacyPolicyView.swift */; };
+		8A2A312326F4EB9F00807993 /* CovidMeasuresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2A312226F4EB9F00807993 /* CovidMeasuresView.swift */; };
+		8A2A312526F4F1A700807993 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2A312426F4F1A700807993 /* PrimaryButton.swift */; };
+		8A2A312826F50FA500807993 /* FAQData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2A312726F50FA500807993 /* FAQData.swift */; };
+		8A2A312D26F525BB00807993 /* SwiftUIEKtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 8A2A312C26F525BB00807993 /* SwiftUIEKtensions */; };
+		8A2A313126F528B600807993 /* Mail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2A313026F528B600807993 /* Mail.swift */; };
+		8A2A313326F5C67300807993 /* MoreBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2A313226F5C67300807993 /* MoreBackground.swift */; };
+		8A2A313526F5C89500807993 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2A313426F5C89500807993 /* BlurView.swift */; };
+		8A2A313826F5F00200807993 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2A313726F5F00100807993 /* UserProfileView.swift */; };
+		8A2A313A26F5F06F00807993 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2A313926F5F06F00807993 /* MenuView.swift */; };
+		8A2A313E26F5F22100807993 /* RotationBug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2A313D26F5F22100807993 /* RotationBug.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +40,25 @@
 		8A2A310026F480F700807993 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A2A310326F480F700807993 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8A2A310526F480F700807993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A2A310C26F4BE5C00807993 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8A2A310E26F4BE8700807993 /* BlogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogView.swift; sourceTree = "<group>"; };
+		8A2A311026F4BEAD00807993 /* ShoppingBagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingBagView.swift; sourceTree = "<group>"; };
+		8A2A311226F4BECC00807993 /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
+		8A2A311526F4D7A200807993 /* SmallButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallButton.swift; sourceTree = "<group>"; };
+		8A2A311726F4DA8C00807993 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		8A2A311A26F4EB1600807993 /* OrderHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryView.swift; sourceTree = "<group>"; };
+		8A2A311C26F4EB3600807993 /* FAQView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQView.swift; sourceTree = "<group>"; };
+		8A2A311E26F4EB4E00807993 /* TermsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsView.swift; sourceTree = "<group>"; };
+		8A2A312026F4EB6600807993 /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
+		8A2A312226F4EB9F00807993 /* CovidMeasuresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidMeasuresView.swift; sourceTree = "<group>"; };
+		8A2A312426F4F1A700807993 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		8A2A312726F50FA500807993 /* FAQData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQData.swift; sourceTree = "<group>"; };
+		8A2A313026F528B600807993 /* Mail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mail.swift; sourceTree = "<group>"; };
+		8A2A313226F5C67300807993 /* MoreBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreBackground.swift; sourceTree = "<group>"; };
+		8A2A313426F5C89500807993 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		8A2A313726F5F00100807993 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		8A2A313926F5F06F00807993 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		8A2A313D26F5F22100807993 /* RotationBug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationBug.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A2A312D26F525BB00807993 /* SwiftUIEKtensions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,9 +94,13 @@
 			children = (
 				8A2A30FC26F480F500807993 /* PlantzaApp.swift */,
 				8A2A30FE26F480F500807993 /* ContentView.swift */,
+				8A2A310B26F4BE3100807993 /* MainViews */,
+				8A2A311926F4EAD400807993 /* MoreSectionViews */,
+				8A2A311426F4D78200807993 /* MoreSectionComponents */,
 				8A2A310026F480F700807993 /* Assets.xcassets */,
 				8A2A310526F480F700807993 /* Info.plist */,
 				8A2A310226F480F700807993 /* Preview Content */,
+				8A2A313626F5C89E00807993 /* UI Kit */,
 			);
 			path = Plantza;
 			sourceTree = "<group>";
@@ -67,6 +111,61 @@
 				8A2A310326F480F700807993 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8A2A310B26F4BE3100807993 /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				8A2A310C26F4BE5C00807993 /* HomeView.swift */,
+				8A2A310E26F4BE8700807993 /* BlogView.swift */,
+				8A2A311026F4BEAD00807993 /* ShoppingBagView.swift */,
+				8A2A311226F4BECC00807993 /* MoreView.swift */,
+			);
+			path = MainViews;
+			sourceTree = "<group>";
+		};
+		8A2A311426F4D78200807993 /* MoreSectionComponents */ = {
+			isa = PBXGroup;
+			children = (
+				8A2A313226F5C67300807993 /* MoreBackground.swift */,
+				8A2A311726F4DA8C00807993 /* MenuCell.swift */,
+				8A2A313926F5F06F00807993 /* MenuView.swift */,
+				8A2A312426F4F1A700807993 /* PrimaryButton.swift */,
+				8A2A313726F5F00100807993 /* UserProfileView.swift */,
+				8A2A311526F4D7A200807993 /* SmallButton.swift */,
+				8A2A313D26F5F22100807993 /* RotationBug.swift */,
+			);
+			path = MoreSectionComponents;
+			sourceTree = "<group>";
+		};
+		8A2A311926F4EAD400807993 /* MoreSectionViews */ = {
+			isa = PBXGroup;
+			children = (
+				8A2A312626F50F8500807993 /* MoreSectionData */,
+				8A2A311A26F4EB1600807993 /* OrderHistoryView.swift */,
+				8A2A311C26F4EB3600807993 /* FAQView.swift */,
+				8A2A311E26F4EB4E00807993 /* TermsView.swift */,
+				8A2A312026F4EB6600807993 /* PrivacyPolicyView.swift */,
+				8A2A312226F4EB9F00807993 /* CovidMeasuresView.swift */,
+			);
+			path = MoreSectionViews;
+			sourceTree = "<group>";
+		};
+		8A2A312626F50F8500807993 /* MoreSectionData */ = {
+			isa = PBXGroup;
+			children = (
+				8A2A312726F50FA500807993 /* FAQData.swift */,
+				8A2A313026F528B600807993 /* Mail.swift */,
+			);
+			path = MoreSectionData;
+			sourceTree = "<group>";
+		};
+		8A2A313626F5C89E00807993 /* UI Kit */ = {
+			isa = PBXGroup;
+			children = (
+				8A2A313426F5C89500807993 /* BlurView.swift */,
+			);
+			path = "UI Kit";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +184,9 @@
 			dependencies = (
 			);
 			name = Plantza;
+			packageProductDependencies = (
+				8A2A312C26F525BB00807993 /* SwiftUIEKtensions */,
+			);
 			productName = Plantza;
 			productReference = 8A2A30F926F480F500807993 /* Plantza.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +214,9 @@
 				Base,
 			);
 			mainGroup = 8A2A30F026F480F500807993;
+			packageReferences = (
+				8A2A312B26F525BB00807993 /* XCRemoteSwiftPackageReference "SwiftUIEKtensions" */,
+			);
 			productRefGroup = 8A2A30FA26F480F500807993 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +243,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A2A313126F528B600807993 /* Mail.swift in Sources */,
+				8A2A310F26F4BE8700807993 /* BlogView.swift in Sources */,
+				8A2A311326F4BECC00807993 /* MoreView.swift in Sources */,
+				8A2A313E26F5F22100807993 /* RotationBug.swift in Sources */,
+				8A2A310D26F4BE5C00807993 /* HomeView.swift in Sources */,
+				8A2A312826F50FA500807993 /* FAQData.swift in Sources */,
+				8A2A313A26F5F06F00807993 /* MenuView.swift in Sources */,
+				8A2A313826F5F00200807993 /* UserProfileView.swift in Sources */,
+				8A2A313526F5C89500807993 /* BlurView.swift in Sources */,
+				8A2A312526F4F1A700807993 /* PrimaryButton.swift in Sources */,
+				8A2A312126F4EB6600807993 /* PrivacyPolicyView.swift in Sources */,
+				8A2A311D26F4EB3600807993 /* FAQView.swift in Sources */,
+				8A2A311126F4BEAD00807993 /* ShoppingBagView.swift in Sources */,
+				8A2A311B26F4EB1600807993 /* OrderHistoryView.swift in Sources */,
 				8A2A30FF26F480F500807993 /* ContentView.swift in Sources */,
 				8A2A30FD26F480F500807993 /* PlantzaApp.swift in Sources */,
+				8A2A313326F5C67300807993 /* MoreBackground.swift in Sources */,
+				8A2A311826F4DA8C00807993 /* MenuCell.swift in Sources */,
+				8A2A312326F4EB9F00807993 /* CovidMeasuresView.swift in Sources */,
+				8A2A311626F4D7A200807993 /* SmallButton.swift in Sources */,
+				8A2A311F26F4EB4E00807993 /* TermsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +452,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8A2A312B26F525BB00807993 /* XCRemoteSwiftPackageReference "SwiftUIEKtensions" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/EnesKaraosman/SwiftUIEKtensions.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8A2A312C26F525BB00807993 /* SwiftUIEKtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A2A312B26F525BB00807993 /* XCRemoteSwiftPackageReference "SwiftUIEKtensions" */;
+			productName = SwiftUIEKtensions;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8A2A30F126F480F500807993 /* Project object */;
 }
