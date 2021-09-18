@@ -8,8 +8,38 @@
 import SwiftUI
 
 struct UserPostsView: View {
+    @ObservedObject var userPostsStore = UserPostStore()
+    
     var body: some View {
-        Text("User Posts View")
+        
+        ScrollView {
+            
+            ForEach(userPostsStore.userPosts) { item in
+                
+                VStack(alignment: .leading, spacing: 10.0) {
+                    Text(item.title)
+                        .font(.title2)
+                    
+                    Text(item.body)
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+                    Divider()
+                }
+                .padding([.leading, .bottom, .trailing], 10.0)
+                
+            }
+            
+            
+            .navigationTitle("User Posts")
+        }
+        
+        .background(
+            Color("Background 2 Light")
+                .ignoresSafeArea()
+        )
+        
+        
+        
     }
 }
 
