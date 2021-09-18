@@ -31,6 +31,7 @@
 		8A2A313826F5F00200807993 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2A313726F5F00100807993 /* UserProfileView.swift */; };
 		8A2A313A26F5F06F00807993 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2A313926F5F06F00807993 /* MenuView.swift */; };
 		8A2A313E26F5F22100807993 /* RotationBug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2A313D26F5F22100807993 /* RotationBug.swift */; };
+		8A63DEED26F63B0400D9FD56 /* UserPostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A63DEEC26F63B0400D9FD56 /* UserPostsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		8A2A313726F5F00100807993 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 		8A2A313926F5F06F00807993 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		8A2A313D26F5F22100807993 /* RotationBug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationBug.swift; sourceTree = "<group>"; };
+		8A63DEEC26F63B0400D9FD56 /* UserPostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 				8A2A311E26F4EB4E00807993 /* TermsView.swift */,
 				8A2A312026F4EB6600807993 /* PrivacyPolicyView.swift */,
 				8A2A312226F4EB9F00807993 /* CovidMeasuresView.swift */,
+				8A63DEEC26F63B0400D9FD56 /* UserPostsView.swift */,
 			);
 			path = MoreSectionViews;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				8A2A312126F4EB6600807993 /* PrivacyPolicyView.swift in Sources */,
 				8A2A311D26F4EB3600807993 /* FAQView.swift in Sources */,
 				8A2A311126F4BEAD00807993 /* ShoppingBagView.swift in Sources */,
+				8A63DEED26F63B0400D9FD56 /* UserPostsView.swift in Sources */,
 				8A2A311B26F4EB1600807993 /* OrderHistoryView.swift in Sources */,
 				8A2A30FF26F480F500807993 /* ContentView.swift in Sources */,
 				8A2A30FD26F480F500807993 /* PlantzaApp.swift in Sources */,

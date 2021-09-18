@@ -27,10 +27,10 @@ struct MoreView: View {
                                 VStack(spacing: 30.0) {
                                     
                                     UserProfileView()
-                                    
+                                        
                                     MenuView()
                                     
-                                    Button(action: {Text("User Signed Out")}, label: {
+                                    Button(action: {print("User Signed Out")}, label: {
                                         
                                         PrimaryButton(imageName: "person.circle", text: "Sign out")
                                         
