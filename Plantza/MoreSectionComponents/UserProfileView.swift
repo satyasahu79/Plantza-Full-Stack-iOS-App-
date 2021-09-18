@@ -8,18 +8,45 @@
 import SwiftUI
 
 struct UserProfileView: View {
+    @State private var isGlowing : Bool = true
+    @State var rotateDegree : CGFloat = 0.0
+    
     var body: some View {
         VStack(spacing: 16.0) {
             HStack(spacing: 16.0) {
-                Image("Avatar")
-                    .resizable()
-                    .scaledToFit()
-                    .clipShape(Circle())
-                    .frame(width: 66.0, height: 66.0)
-                    .overlay(
-                        Circle()
-                            .stroke(Color.black.opacity(0.2),lineWidth: 1)
+                
+                
+                ZStack {
+                    
+                    
+                    //Glow
+                    
+                    Circle()
+                        .fill(AngularGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 1, green: 0.7945833206176758, blue: 0.3958333134651184, alpha: 1)), Color(#colorLiteral(red: 1, green: 0.25, blue: 0.31547629833221436, alpha: 1)),Color(#colorLiteral(red: 1, green: 0.9771666526794434, blue: 0.42916667461395264, alpha: 1)),Color(#colorLiteral(red: 0.7800833582878113, green: 1, blue: 0.15416663885116577, alpha: 1)),Color(#colorLiteral(red: 1, green: 0.7945833206176758, blue: 0.3958333134651184, alpha: 1))]), center: .center))
+                        .rotationEffect(.degrees(180))
+                        .rotationEffect(Angle(degrees: Double(rotateDegree)))
+                        .onAppear(perform: {
+                            withAnimation(Animation.linear(duration: 5).repeatForever(autoreverses: false)) {
+                                self.rotateDegree = 360
+                            }
+                        })
+                        .blur(radius: 20)
+                        .frame(width: 66.0, height: 66.0)
+                    
+                   
+                    Image("Avatar")
+                        .resizable()
+                        .scaledToFit()
+                        .clipShape(Circle())
+                        .frame(width: 66.0, height: 66.0)
+                        .overlay(
+                            Circle()
+                                .stroke(Color.black.opacity(0.2),lineWidth: 1)
                     )
+                    
+                    
+                    
+                }
                 Text("Robert Fox")
                     .font(.title2)
                     .fontWeight(.bold)
@@ -27,7 +54,7 @@ struct UserProfileView: View {
                 
                 Spacer()
                 
-                SmallButton()
+                SmallButton( isGlowing: $isGlowing)
                 
             }   // HStack Ends
             
@@ -47,12 +74,23 @@ struct UserProfileView: View {
                 }
                 
                 
-                HStack {
-                    Image(systemName: "envelope")
-                        .opacity(0.3)
-                    Text("trungkienspktnd@gamail.com")
-                    Spacer()
-                }.font(.subheadline)
+                VStack(alignment: .leading, spacing: 8.0) {
+                    HStack {
+                        Image(systemName: "envelope")
+                            .opacity(0.3)
+                        Text("trungkienspktnd@gamail.com")
+                        Spacer()
+                    }.font(.subheadline)
+                    
+                    HStack {
+                        Image(systemName: "phone.circle")
+                            .opacity(0.3)
+                        Text("+91 79789 03356")
+                        Spacer()
+                    }.font(.subheadline)
+                }
+                
+                
                 
             }
             
@@ -70,6 +108,7 @@ struct UserProfileView: View {
         .shadow(color: Color("Primary").opacity(0.5), radius:60, x:0, y:30)
     }
 }
+
 
 struct UserProfileView_Previews: PreviewProvider {
     static var previews: some View {
