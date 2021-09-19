@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct UserProfileView: View {
-    @State private var isGlowing : Bool = true
+   
     @State var rotateDegree : CGFloat = 0.0
     
     var body: some View {
@@ -54,7 +54,7 @@ struct UserProfileView: View {
                 
                 Spacer()
                 
-                SmallButton( isGlowing: $isGlowing)
+                SmallButton ( isGlowing: true)
                 
             }   // HStack Ends
             
@@ -96,7 +96,7 @@ struct UserProfileView: View {
             
         }
         .padding(16)
-        .background(BlurView(style: .light).opacity(0.3))
+        .background(BlurView(style: .light).opacity(0.5))
         .background(Color("Background 1 Light").opacity(0.4))
         
         .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))

@@ -28,7 +28,7 @@ struct BlogCardView: View {
               
                 VStack(alignment: .leading, spacing: 5.0) {
                     Text(blogCardData.headline)
-                        .font(.title3)
+                        .font(.headline)
                         .fontWeight(.semibold)
                     Text(blogCardData.subhadline)
                         .multilineTextAlignment(.leading)

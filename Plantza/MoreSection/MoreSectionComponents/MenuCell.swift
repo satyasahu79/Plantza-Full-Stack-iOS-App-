@@ -12,7 +12,7 @@ struct MenuCell: View {
     var imageName : String = "gift.fill"
     var title : String = "Placeholder Text"
     var destination : AnyView = AnyView(HomeView())
-    @State private var isGLowing : Bool = false
+    
     
     // MARK: - Body
     var body: some View {
@@ -22,7 +22,7 @@ struct MenuCell: View {
             label: {
                 
                 HStack  {
-                    SmallButton(imageName: imageName, isGlowing: $isGLowing)
+                    SmallButton(imageName: imageName, isGlowing: false)
                     Text(title)
                         .font(.headline)
                         .fontWeight(.semibold)
