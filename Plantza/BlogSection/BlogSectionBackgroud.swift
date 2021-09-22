@@ -36,7 +36,7 @@ struct BlogSectionBackgroud: View {
                     .rotationEffect(Angle(degrees: Double(rotateDegree)))
                     .onAppear(perform: {
                         withAnimation(Animation.linear(duration: 6).repeatForever(autoreverses: false)) {
-                            self.rotateDegree = -360
+                            self.rotateDegree = 360
                         }
                     })
                     .offset(x: 280, y: -90)

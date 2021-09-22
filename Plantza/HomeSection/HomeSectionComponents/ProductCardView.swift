@@ -23,6 +23,7 @@ struct ProductCardView: View {
                 Text(product.title)
                     .font(.title2)
                     .fontWeight(.bold)
+                    .foregroundColor(.black)
                     .multilineTextAlignment(.leading)
                
                 HStack{

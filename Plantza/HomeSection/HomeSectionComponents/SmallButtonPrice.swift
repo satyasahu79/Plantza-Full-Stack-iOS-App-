@@ -34,9 +34,11 @@ struct SmallButtonPrice: View {
                 
             }
             
-            Text ("$\(price)")
-                .font(.system(size: 17, weight: .bold, design: .rounded))
-                .foregroundColor(.accentColor)
+            LinearGradient(gradient: Gradient(colors: [Color("AccentColor"), Color("Primary")]), startPoint: .leading, endPoint: .trailing)
+                .mask(Text ("$\(price)")
+                        .font(.system(size: 17, weight: .bold, design: .rounded)))
+                .frame(width: 36, height: 36, alignment: .center)
+                    
                 .padding(12)
                 .background(Color("Background 1 Light").opacity(0.8))
                 .clipShape(Circle())

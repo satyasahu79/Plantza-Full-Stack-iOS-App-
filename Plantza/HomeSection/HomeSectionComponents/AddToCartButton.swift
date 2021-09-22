@@ -17,17 +17,27 @@ struct AddToCartButton: View {
         HStack(alignment: .center, spacing: 5.0) {
             
             
-            Group {
-                Spacer()
-                Image(systemName: "bag.badge.plus")
-                    .font(.title3.weight(.light))
-                    .padding(.horizontal, 4)
-                Text("Add to Cart")
-                    .font(.subheadline)
-                    .fontWeight(.semibold)
-                Spacer()
-            }
-            .offset(x:-10)
+            LinearGradient(gradient: Gradient(colors: [Color("AccentColor"), Color("Primary")]), startPoint: .leading, endPoint: .trailing)
+                .mask(
+                
+                    Group {
+                        Spacer()
+                        Image(systemName: "bag.badge.plus")
+                            .font(.title3.weight(.light))
+                            .padding(.horizontal, 4)
+                        Text("Add to Cart")
+                            .font(.subheadline)
+                            .fontWeight(.semibold)
+                        Spacer()
+                    }
+                    .offset(x:-10)
+                
+                
+                )
+//                .frame(width:300, height: 44.0)
+                    
+            
+            
         }
         .padding(.vertical, 12)
         .background(Color("Background 1 Light").opacity(0.2))
