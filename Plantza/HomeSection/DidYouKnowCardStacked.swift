@@ -9,6 +9,11 @@ import SwiftUI
 
 struct DidYouKnowCardStacked: View {
     var facts : Fact = factData[1]
+    @Binding var isActive : Bool
+    
+    var factsArray : [Fact] = factData
+
+    var tips : [Tips] = tipsData
     
     var body: some View {
         ZStack{
@@ -21,12 +26,18 @@ struct DidYouKnowCardStacked: View {
             DidYouKnowCard(facts: facts)
             
         }
+        .onTapGesture {
+            
+            isActive.toggle()
+            
+        }
+        
     }
 }
 
 struct DidYouKnowCardStacked_Previews: PreviewProvider {
     static var previews: some View {
-        DidYouKnowCardStacked()
+        DidYouKnowCardStacked( isActive: .constant(true))
     }
 }
 

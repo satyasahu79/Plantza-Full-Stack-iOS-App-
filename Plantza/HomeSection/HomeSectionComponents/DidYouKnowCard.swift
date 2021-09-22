@@ -10,6 +10,7 @@ import SwiftUI
 struct DidYouKnowCard: View {
     
     var facts : Fact = factData[3]
+    @State var rotateDegree : CGFloat = 0
     
     var body: some View {
         
@@ -18,7 +19,7 @@ struct DidYouKnowCard: View {
             
             HStack(alignment: .top, spacing: 15.0)  {
                 
-                SmallButton(imageName: "gearshape.fill", rotateDegree: 0, isGlowing: true)
+                SmallButton(imageName: "gearshape.fill", rotateDegree: rotateDegree, isGlowing: true)
                
                 
                 VStack(alignment: .leading, spacing: 10.0){

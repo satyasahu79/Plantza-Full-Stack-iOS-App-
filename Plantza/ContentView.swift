@@ -18,6 +18,8 @@ struct ContentView: View {
                 .tabItem {  Image(systemName: "bag");Text("Bag")  }
             MoreView()
                 .tabItem {  Image(systemName: "ellipsis.circle");Text("More")  }
+            FeaturedCarousel()
+                .tabItem {  Image(systemName: "xmark.bin");Text("Test")  }
         }
     }
 }

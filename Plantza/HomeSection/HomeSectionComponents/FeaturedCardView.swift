@@ -20,25 +20,25 @@ struct FeaturedCardView: View {
         ZStack {
             
 //            Angluar Blur
-            
-            HStack {
-                Image("Inner Blob 1").opacity(0.3)
-                    .scaleEffect(2)
-                    .blur(radius: 40)
-                    .rotationEffect(Angle(degrees: Double(rotateDegree)))
-                    .onAppear() {
-                        DispatchQueue.main.async {
-                            withAnimation(Animation.linear(duration: 10).repeatForever(autoreverses: false)) {
-                                self.rotateDegree = 360
-                            }
-                        }
-                    }
-            }
-            .frame(width: 250, height: 250, alignment: .center)
-            .padding(.horizontal, 15)
-            .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
-            
-            
+//            
+//            HStack {
+//                Image("Inner Blob 1").opacity(0.3)
+//                    .scaleEffect(2)
+//                    .blur(radius: 40)
+//                    .rotationEffect(Angle(degrees: Double(rotateDegree)))
+//                    .onAppear() {
+//                        DispatchQueue.main.async {
+//                            withAnimation(Animation.linear(duration: 10).repeatForever(autoreverses: false)) {
+//                                self.rotateDegree = 360
+//                            }
+//                        }
+//                    }
+//            }
+//            .frame(width: 250, height: 250, alignment: .center)
+//            .padding(.horizontal, 15)
+//            .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+//            
+//            
             HStack {
                     
                     

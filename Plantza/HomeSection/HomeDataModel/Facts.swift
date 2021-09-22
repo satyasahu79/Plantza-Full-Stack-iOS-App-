@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct Fact {
+struct Fact : Identifiable {
     var id = UUID()
     var title : String
     var text : String
