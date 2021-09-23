@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    
     var body: some View {
         TabView {
             HomeView()
@@ -18,8 +20,10 @@ struct ContentView: View {
                 .tabItem {  Image(systemName: "bag");Text("Bag")  }
             MoreView()
                 .tabItem {  Image(systemName: "ellipsis.circle");Text("More")  }
-            FeaturedCarousel()
+            PrivacyPolicyFirebase()
                 .tabItem {  Image(systemName: "xmark.bin");Text("Test")  }
+//            ReadBlogData(blogManager: blogManager)
+//                .tabItem {  Image(systemName: "xmark.bin");Text("Test")  }
         }
     }
 }
@@ -27,5 +31,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(DataStore())
     }
 }

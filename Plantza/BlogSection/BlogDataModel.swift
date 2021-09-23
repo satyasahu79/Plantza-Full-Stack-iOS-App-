@@ -10,7 +10,7 @@ import SwiftUI
 
 struct BlogData : Identifiable {
     var id = UUID()
-    var image : String
+    var image : URL?
     var headline : String
     var subhadline : String
     var body : String
@@ -19,7 +19,7 @@ struct BlogData : Identifiable {
 
 var blogData : [BlogData] = [
     
-    BlogData(image: "BlogImage1", headline: "How to divide Bird of Paradise plant?", subhadline: "Today I will teach you how to divide Bird of Paradise plant and make multiple arrangements and then arrange them according to the asthetics your room.",
+    BlogData(image: URL(string:"https://dl.dropbox.com/s/jkhs95brpwxzga7/Card6%402x.png?dl=0")!, headline: "How to divide Bird of Paradise plant?", subhadline: "Today I will teach you how to divide Bird of Paradise plant and make multiple arrangements and then arrange them according to the asthetics your room.",
              body: """
                 Bird of paradise plants can be divided if :
                 
@@ -41,7 +41,7 @@ var blogData : [BlogData] = [
                 """
     ),
     
-    BlogData(image: "BlogImage2", headline: "How to divide Bird of plant?", subhadline: "Today I will teach you how to divide Bird of Paradise plant and make multiple arrangements and then arrange them according to the asthetics your room.",
+    BlogData(image: URL(string:"https://dl.dropbox.com/s/yxkcrf8cee2r83a/BlogImage1.jpg?dl=0")!, headline: "How to divide Bird of plant?", subhadline: "Today I will teach you how to divide Bird of Paradise plant and make multiple arrangements and then arrange them according to the asthetics your room.",
              body: """
                 Bird of paradise plants can be divided if :
                 

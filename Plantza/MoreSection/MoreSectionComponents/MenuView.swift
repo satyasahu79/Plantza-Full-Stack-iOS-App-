@@ -9,6 +9,9 @@ import SwiftUI
 
 struct MenuView: View {
     
+    
+    
+    
     var body: some View {
         
         VStack  {
@@ -34,11 +37,13 @@ struct MenuView: View {
             
             Divider()
             
-            MenuCell(imageName : "doc.text.fill" ,title: "Privacy Policy", destination: AnyView(PrivacyPolicyView()))
+//            MenuCell(imageName : "doc.text.fill" ,title: "Privacy Policy", destination: AnyView(PrivacyPolicyView())
+            
+            MenuCell(imageName: "doc.text.fill", title: "Privacy Policy", destination: AnyView(PrivacyPolicyFirebase()))
             
             Divider()
             
-            MenuCell(imageName : "doc.text.fill" , title: "Terms of Service", destination: AnyView(TermsView()))
+            MenuCell(imageName : "doc.text.fill" , title: "Terms of Service", destination: AnyView(TOSFirebase()))
             
             
             
@@ -60,5 +65,6 @@ struct MenuView: View {
 struct MenuView_Previews: PreviewProvider {
     static var previews: some View {
         MenuView()
+            .environmentObject(DataStore())
     }
 }

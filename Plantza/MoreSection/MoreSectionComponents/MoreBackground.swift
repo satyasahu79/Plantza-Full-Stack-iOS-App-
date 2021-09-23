@@ -39,7 +39,7 @@ struct MoreBackground: View {
 
             Image("Profile Outer Blob")
                 .offset(x: -30 ,y: -170)
-            
+          
         }
         .frame(width: bounds.size.width)
             

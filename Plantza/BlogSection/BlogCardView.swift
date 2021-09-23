@@ -6,16 +6,18 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct BlogCardView: View {
     
     var blogCardData : BlogData
     
     
+    
     var body: some View {
         
         VStack(alignment: .center, spacing: 20.0) {
-            Image(blogCardData.image)
+            WebImage(url: blogCardData.image)
                 .resizable()
                 .scaledToFill()
                 .frame(width: 355, height: 180, alignment: .center)
@@ -61,6 +63,10 @@ struct BlogCardView: View {
 
 struct BlogCardView_Previews: PreviewProvider {
     static var previews: some View {
-        BlogCardView(blogCardData: blogData[0])
+        BlogCardView(blogCardData: blogData[1])
     }
 }
+
+
+
+

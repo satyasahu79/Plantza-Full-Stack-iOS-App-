@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct BlogDetailView: View {
     
@@ -24,7 +25,7 @@ struct BlogDetailView: View {
                     
                     VStack(spacing: 30.0)  {
                         
-                        Image(blogDetailData.image)
+                        WebImage(url: blogDetailData.image)
                             .resizable()
                             .scaledToFill()
                             .frame(width: bounds.size.width,height: 220)

@@ -104,11 +104,7 @@ struct HomeView: View {
                 
             }
             
-            
-            
-            
-            
-            
+          
             
             }
             .navigationTitle("")
