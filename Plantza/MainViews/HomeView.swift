@@ -30,6 +30,7 @@ struct HomeView: View {
                 
                 
                 
+                
                 ScrollView (showsIndicators : false) {
                     
                     VStack {

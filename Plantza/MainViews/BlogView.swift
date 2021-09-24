@@ -11,6 +11,8 @@ struct BlogView: View {
     
     var blogCards : [BlogData] = blogData
     
+//    @ObservedObject var store = BlogDataContentful()
+    
     @State private var rotateDegree : CGFloat = 0
     
     var body: some View {
@@ -22,7 +24,6 @@ struct BlogView: View {
                     
                     BlogSectionBackgroud(rotateDegree: $rotateDegree)
                     
-                 
                         ScrollView {
                             
                             VStack(alignment: .leading, spacing: 20.0){

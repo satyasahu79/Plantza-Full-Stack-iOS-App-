@@ -26,6 +26,7 @@ struct MenuCell: View {
                     Text(title)
                         .font(.headline)
                         .fontWeight(.semibold)
+                        .foregroundColor(.black)
                     Spacer()
                     
                     Image(systemName: "chevron.right")

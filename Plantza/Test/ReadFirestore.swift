@@ -14,6 +14,7 @@ struct ReadFirestore: View {
     var body: some View {
         Text("\(firestoreManager.restaurant)")
                 .padding()
+           
         
     }
 }

@@ -67,6 +67,8 @@
 		8AB27F3126FCE9B800DAF426 /* PrivacyPolicyFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB27F3026FCE9B800DAF426 /* PrivacyPolicyFirebase.swift */; };
 		8AB27F3326FCEA2900DAF426 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB27F3226FCEA2900DAF426 /* DataStore.swift */; };
 		8AB27F3526FD1BE500DAF426 /* TOSFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB27F3426FD1BE500DAF426 /* TOSFirebase.swift */; };
+		8AB27F3726FD9C0900DAF426 /* BlogDataContentful.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB27F3626FD9C0900DAF426 /* BlogDataContentful.swift */; };
+		8AB27F3A26FD9EED00DAF426 /* Contentful in Frameworks */ = {isa = PBXBuildFile; productRef = 8AB27F3926FD9EED00DAF426 /* Contentful */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -128,6 +130,7 @@
 		8AB27F3026FCE9B800DAF426 /* PrivacyPolicyFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyFirebase.swift; sourceTree = "<group>"; };
 		8AB27F3226FCEA2900DAF426 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		8AB27F3426FD1BE500DAF426 /* TOSFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOSFirebase.swift; sourceTree = "<group>"; };
+		8AB27F3626FD9C0900DAF426 /* BlogDataContentful.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogDataContentful.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +141,7 @@
 				8AB27F2926FBD4B000DAF426 /* SDWebImageSwiftUI in Frameworks */,
 				8A2A312D26F525BB00807993 /* SwiftUIEKtensions in Frameworks */,
 				8AB27F1B26FBBBFC00DAF426 /* FirebaseAuth in Frameworks */,
+				8AB27F3A26FD9EED00DAF426 /* Contentful in Frameworks */,
 				8AB27F2226FBC2F100DAF426 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,6 +314,7 @@
 				8AB27F2326FBC30B00DAF426 /* FireStoreManager.swift */,
 				8AB27F2526FBD0EA00DAF426 /* BlogManager.swift */,
 				8AB27F2A26FBD9B900DAF426 /* ReadBlogData.swift */,
+				8AB27F3626FD9C0900DAF426 /* BlogDataContentful.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -350,6 +355,7 @@
 				8AB27F1A26FBBBFC00DAF426 /* FirebaseAuth */,
 				8AB27F2126FBC2F100DAF426 /* FirebaseFirestore */,
 				8AB27F2826FBD4B000DAF426 /* SDWebImageSwiftUI */,
+				8AB27F3926FD9EED00DAF426 /* Contentful */,
 			);
 			productName = Plantza;
 			productReference = 8A2A30F926F480F500807993 /* Plantza.app */;
@@ -382,6 +388,7 @@
 				8A2A312B26F525BB00807993 /* XCRemoteSwiftPackageReference "SwiftUIEKtensions" */,
 				8AB27F1926FBBBFC00DAF426 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				8AB27F2726FBD4B000DAF426 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				8AB27F3826FD9EED00DAF426 /* XCRemoteSwiftPackageReference "contentful.swift" */,
 			);
 			productRefGroup = 8A2A30FA26F480F500807993 /* Products */;
 			projectDirPath = "";
@@ -439,6 +446,7 @@
 				8A63DEED26F63B0400D9FD56 /* UserPostsView.swift in Sources */,
 				8AB27F1126FB6B4100DAF426 /* DidYouKnowScrollView.swift in Sources */,
 				8A63DF0E26F792E000D9FD56 /* AddToCartButton.swift in Sources */,
+				8AB27F3726FD9C0900DAF426 /* BlogDataContentful.swift in Sources */,
 				8A63DF0426F7758D00D9FD56 /* FeaturedCardStacked.swift in Sources */,
 				8A2A311B26F4EB1600807993 /* OrderHistoryView.swift in Sources */,
 				8A63DF1726F7DAE100D9FD56 /* ProductDetailView.swift in Sources */,
@@ -677,6 +685,14 @@
 				minimumVersion = 2.0.2;
 			};
 		};
+		8AB27F3826FD9EED00DAF426 /* XCRemoteSwiftPackageReference "contentful.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/contentful/contentful.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.5.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -699,6 +715,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8AB27F2726FBD4B000DAF426 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
+		};
+		8AB27F3926FD9EED00DAF426 /* Contentful */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8AB27F3826FD9EED00DAF426 /* XCRemoteSwiftPackageReference "contentful.swift" */;
+			productName = Contentful;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

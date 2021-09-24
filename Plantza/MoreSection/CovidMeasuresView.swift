@@ -23,9 +23,6 @@ struct CovidMeasuresView: View {
                     .navigationBarTitle("SwiftUI", displayMode: .inline)
             })
             
-            
-            
-            Text("Covid-19 Management")
         }
     }
 }

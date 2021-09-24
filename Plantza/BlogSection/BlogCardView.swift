@@ -32,10 +32,12 @@ struct BlogCardView: View {
                     Text(blogCardData.headline)
                         .font(.headline)
                         .fontWeight(.semibold)
+                        .foregroundColor(.black)
                     Text(blogCardData.subhadline)
                         .multilineTextAlignment(.leading)
                         .lineLimit(2)
                         .font(.subheadline)
+                        .foregroundColor(.secondary)
                    
                     
                 }
